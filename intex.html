@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Website Login & Signup Page</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<script type="text/javascript">
+		alert("Wel Come My Web Page");
+		
+
+		document.querySelector("#ab").onclick = () => {
+			document.querySelector('.login').classlist.toggle('active');
+		}
+
+		document.querySelector('#close').onclick = () => {
+			document.querySelector('.login').classlist.remove('active');
+		}
+	</script>
+	
+	
+	<header>
+	<nav>
+		<a href="#" class="logo">HomePage<hr></a>
+
+		<ul>
+			<li><a href="#">Home<hr></a></li>
+			<li><a href="#">About<hr></a></li>
+			<li><a href="#">Service<hr></a></li>
+			<li><a href="#"> Contact<hr></a></li>
+			<li><a href="#">Help<hr></a></li>
+
+		</ul>
+		<button class="ab">Login</button>
+	</nav>
+</header>
+<!--hero Section-->
+<section>
+	<form>
+<div class="hero_section">
+	<div class="from_container">
+		<i class="fa-solid fa-xmark close_btn"></i>
+		     <div class="login">
+		     	<span id="close"></span>
+		 	     <form accept="#">
+		 		 <h3>Login<hr></h3>
+
+		 	<div class="input_box">
+		 		       <input type="email" placeholder="Enter your Email" required>
+		 		       <i class="fa-regular fa-envelope"></i>
+		     </div>
+		 	     <div class="input_box">
+		 		       <input type="password" placeholder="Enter your Password" required>
+		 		       <i class="fa-solid fa-lock"></i>
+		 	     </div>
+		 	     <div class="select">
+		 	     	<span class="checkbox">
+		 	     	   <input type="checkbox" id="remember">
+		 	     	   <label for="remember">Remember Me</label>
+		 	     	</span>
+		 	     	   <a href="#" class="Forget">Forget Password?</a>
+		 	     </div>
+		 	     <button>Login</button>
+		 	     <div class="signup">
+                  Don't have an account?<a href="#" id="signup">SignUp</a>		 	     	
+		 	     </div>
+
+		 	     </form>
+		 </div>
+	</div>
+</div>
+</form>
+</section>
+
+
+
+</body>
+</html>
